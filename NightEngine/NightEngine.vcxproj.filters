@@ -10,12 +10,6 @@
     <Filter Include="src\NightEngine\Core">
       <UniqueIdentifier>{04B9A08F-F047-2A59-9966-3E5485D43AFF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\NightEngine\ECS">
-      <UniqueIdentifier>{76A30CCE-E204-EADB-6B72-308ED7D2209B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\NightEngine\ECS\Components">
-      <UniqueIdentifier>{CBB25A50-B7D8-24B7-A01E-AA828CE34983}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\NightEngine\Events">
       <UniqueIdentifier>{901BD5FF-7C15-FE51-6582-9462511B64BE}</UniqueIdentifier>
     </Filter>
