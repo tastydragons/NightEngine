@@ -1,0 +1,12 @@
+[submodule "NightEngine/vendor/spdlog"]
+	path = NightEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "NightEngine/vendor/GLFW"]
+	path = NightEngine/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW
+[submodule "NightEngine/vendor/imgui"]
+	path = NightEngine/vendor/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "NightEngine/vendor/glm"]
+	path = NightEngine/vendor/glm
+	url = https://github.com/g-truc/glm
