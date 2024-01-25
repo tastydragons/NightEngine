@@ -1,28 +1,47 @@
+/*!***********************************************************************
+ * @file Texture.h
+ * @author Aloysius Liong Yu Xuan
+ * @par DP email: a.liong@digipen.edu
+ * @par Course: CSD2401F23-B
+ * @par Milestone 1
+ * @date 27-9-2023
+ * @brief Declaration of the Texture class for handling texture data.
+ *
+ * This header file defines the Texture class, which is responsible for
+ * managing texture data in OpenGL. It provides constructors for loading
+ * textures from image files or creating empty textures, as well as functions
+ * for setting texture data and binding textures for rendering.
+*************************************************************************/
+
 #pragma once
 
 #include <string>
+#include <GL/glew.h>
 
-#include "NightEngine/Core/Core.h"
-
-namespace Night
-{
+namespace Night {
 	class Texture
 	{
 	public:
-		virtual ~Texture() = default;
+		Texture(const std::string& filepath);
+		Texture(uint32_t width, uint32_t height);
+		~Texture();
 
-		virtual uint32_t GetWidth() const = 0;
-		virtual uint32_t GetHeight() const = 0;
+		void TextureData(void* data);
 
-		virtual void SetData(void* data, uint32_t size) = 0;
+		virtual bool operator== (const Texture& other) const {
+			return m_rendererID == other.GetRendererID();
+		}
 
-		virtual void Bind(uint32_t slot = 0) const = 0;
-	};
+		inline uint32_t GetWidth() const { return m_width; }
+		inline uint32_t GetHeight() const { return m_height; }
+		inline uint32_t GetRendererID() const { return m_rendererID; }
 
-	class Texture2D : public Texture
-	{
-	public:
-		static Ref<Texture2D> Create(uint32_t width, uint32_t height);
-		static Ref<Texture2D> Create(const std::string& path);
+		void Bind(uint32_t slot = 0) const;
+
+	private:
+		uint32_t m_width = 0, m_height = 0;
+		uint32_t m_rendererID;
+		GLenum m_InternalFormat, m_DataFormat;
 	};
 }
+
