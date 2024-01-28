@@ -1390,6 +1390,7 @@
     <ClInclude Include="src\NightEngine\Renderer\TextRendering.h" />
     <ClInclude Include="src\NightEngine\Audio\AudioEngine.h" />
     <ClInclude Include="src\NightEngine\ECS\Components\Audio.h" />
+    <ClInclude Include="src\NightEngine\Math\Physics.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1442,5 +1443,6 @@
     <ClCompile Include="src\NightEngine\Renderer\TextRendering.cpp" />
     <ClCompile Include="src\NightEngine\Audio\AudioEngine.cpp" />
     <ClCompile Include="src\NightEngine\ECS\Components\Audio.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
   </ItemGroup>
 </Project>

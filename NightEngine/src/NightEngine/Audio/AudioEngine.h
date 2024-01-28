@@ -33,7 +33,7 @@ public:
 
     FMOD::Sound* Loadsound(const std::string& strSoundName, bool bLooping = false);
 
-    int PlaySound(const std::string& strSoundName, EM::Audio::AudioType chgrp);
+    int PlaySound(const std::string& strSoundName, Night::Audio::AudioType chgrp);
     void PauseSound(int channelID);
     void UnpauseSound(int channelID);
     void StopChannel(channel_groups chan);

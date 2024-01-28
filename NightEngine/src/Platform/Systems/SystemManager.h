@@ -2,7 +2,7 @@
 
 #include "NightEngine/Core/Core.h"
 
-#include "NightEngine/Systems/System.h"
+#include "Platform/Systems/System.h"
 
 namespace Night
 {

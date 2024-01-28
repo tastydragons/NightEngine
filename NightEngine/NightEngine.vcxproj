@@ -177,6 +177,7 @@
     <ClInclude Include="src\NightEngine\Math\Matrix3x3.h" />
     <ClInclude Include="src\NightEngine\Math\Matrix4x4.h" />
     <ClInclude Include="src\NightEngine\Math\NEMath.h" />
+    <ClInclude Include="src\NightEngine\Math\Physics.h" />
     <ClInclude Include="src\NightEngine\Math\Vector2D.h" />
     <ClInclude Include="src\NightEngine\Math\Vector3D.h" />
     <ClInclude Include="src\NightEngine\Math\Vector4D.h" />
@@ -632,6 +633,7 @@
     <ClCompile Include="src\NightEngine\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp" />
     <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
     <ClCompile Include="src\NightEngine\Math\Vector2D.cpp" />
     <ClCompile Include="src\NightEngine\Math\Vector3D.cpp" />
     <ClCompile Include="src\NightEngine\Math\Vector4D.cpp" />

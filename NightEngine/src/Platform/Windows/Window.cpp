@@ -31,7 +31,7 @@ namespace Night
 		/* Initialize the library */
 		if (!glfwInit())
 		{
-			EM_EXO_ASSERT(!glfwInit(), "\aGLFW init has failed - exit project...");
+			NIGHT_CORE_ASSERT(!glfwInit(), "\aGLFW init has failed - exit project...");
 		}
 		glfwSetErrorCallback(ErrorCallback);
 
@@ -80,11 +80,11 @@ namespace Night
 			glfwTerminate();
 		}
 
-		EM_EXO_INFO("Generating Window {0} : SIZE ({1},{2})", m_windowData.Title, m_windowData.m_Width, m_windowData.m_Height);
+		NIGHT_CORE_INFO("Generating Window {0} : SIZE ({1},{2})", m_windowData.Title, m_windowData.m_Width, m_windowData.m_Height);
 
 
 		if (glewInit() != GLEW_OK)
-			EM_EXO_ASSERT(!glewInit(), "GLEW init has failed - abort program...");
+			NIGHT_CORE_ASSERT(!glewInit(), "GLEW init has failed - abort program...");
 
 		//context
 		ToggleVsync(true);
@@ -165,13 +165,13 @@ namespace Night
 				{
 					folder = "Assets/Textures/VFX";
 				}
-				else EM_EXO_INFO("The name convention for this png {0} is wrong", filename.string().c_str());
+				else NIGHT_CORE_INFO("The name convention for this png {0} is wrong", filename.string().c_str());
 
 				std::filesystem::copy(std::filesystem::path(paths[i]), folder / filename);
 			}
 			else
 			{
-				EM_EXO_INFO("Error Detected The extenstion is {0}", std::filesystem::path(paths[i]).extension().string().c_str());
+				NIGHT_CORE_INFO("Error Detected The extenstion is {0}", std::filesystem::path(paths[i]).extension().string().c_str());
 			}
 		}
 	}
@@ -181,7 +181,7 @@ namespace Night
 	****************************************************************************/
 	void Window::ErrorCallback(int error, const char* description)
 	{
-		EM_EXO_ERROR("GLFW ERROR {0} : {1}", error, description);
+		NIGHT_CORE_ERROR("GLFW ERROR {0} : {1}", error, description);
 	}
 
 	/*!*************************************************************************
@@ -202,7 +202,7 @@ namespace Night
 	{
 		UNREFERENCED_PARAMETER(window);
 		(void)scancode, (void)mode;
-		InputSystem::GetInstance()->SetKeyStatus(key, action);
+		Input::GetInstance()->SetKeyStatus(key, action);
 	}
 
 	/*!*************************************************************************
@@ -211,7 +211,7 @@ namespace Night
 	void Window::Mousebutton_callback(GLFWwindow* window, int button, int action, int mode)
 	{
 		(void)window, (void)mode;
-		InputSystem::GetInstance()->SetMouseStatus(button, action);
+		Input::GetInstance()->SetMouseStatus(button, action);
 	}
 
 	/*!*************************************************************************
@@ -220,7 +220,7 @@ namespace Night
 	void Window::Mousescroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 	{
 		(void)window, (void)xoffset, (void)yoffset;
-		InputSystem::GetInstance()->mMouseScrollStatus = static_cast<int>(yoffset);
+		Input::GetInstance()->mMouseScrollStatus = static_cast<int>(yoffset);
 	}
 
 	/*!*************************************************************************
