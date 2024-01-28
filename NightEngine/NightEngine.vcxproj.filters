@@ -25,9 +25,6 @@
     <Filter Include="src\Platform\OpenGL">
       <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Platform\System">
-      <UniqueIdentifier>{15EE9341-814F-714F-0ABD-B701761DA80E}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
     </Filter>
@@ -90,9 +87,6 @@
     <ClInclude Include="src\NightEngine\Core\Timestep.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Core\Window.h">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClInclude>
     <ClInclude Include="src\NightEngine\Events\ApplicationEvent.h">
       <Filter>src\NightEngine\Events</Filter>
     </ClInclude>
@@ -108,64 +102,7 @@
     <ClInclude Include="src\NightEngine\ImGui\ImGuiLayer.h">
       <Filter>src\NightEngine\ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Buffer.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\GraphicsContext.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\OrthographicCamera.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\OrthographicCameraController.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\RenderCommand.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Renderer.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Renderer2D.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\RendererAPI.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Shader.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Texture.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\VertexArray.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
-      <Filter>src\Platform\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
-      <Filter>src\Platform\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="src\hzpch.h">
+    <ClInclude Include="src\nepch.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\common.hpp">
@@ -1416,6 +1353,43 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="src\NightEngine\Renderer\Buffer.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Shader.h" />
+    <ClInclude Include="src\NightEngine\Renderer\VertexBuffer.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Texture.h" />
+    <ClInclude Include="src\NightEngine\Timer\Timer.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Camera2D.h" />
+    <ClInclude Include="src\NightEngine\ECS\Types.h" />
+    <ClInclude Include="src\Platform\Systems\System.h" />
+    <ClInclude Include="src\Platform\Windows\Window.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\WinData.h" />
+    <ClInclude Include="src\Serialization\JSONIncludes.h" />
+    <ClInclude Include="src\Serialization\JSONSerialization.h" />
+    <ClInclude Include="src\NightEngine\Math\MathHeader.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector2D.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\IComponent.h" />
+    <ClInclude Include="src\Platform\LevelEditor\LevelEditor.h" />
+    <ClInclude Include="src\NightEngine\Renderer\VertexArray.h" />
+    <ClInclude Include="src\Platform\Systems\SystemManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\EntityManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Sprite.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Components.h" />
+    <ClInclude Include="src\NightEngine\ECS\ComponentArray.h" />
+    <ClInclude Include="src\NightEngine\ECS\ComponentManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\ECS.h" />
+    <ClInclude Include="src\NightEngine\ResourceManager\ResourceManager.h" />
+    <ClInclude Include="src\NightEngine\Renderer\SpriteRendering.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector3D.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector4D.h" />
+    <ClInclude Include="src\NightEngine\Math\Matrix3x3.h" />
+    <ClInclude Include="src\NightEngine\Math\Matrix4x4.h" />
+    <ClInclude Include="src\NightEngine\Math\NEMath.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Renderer.h" />
+    <ClInclude Include="src\NightEngine\Renderer\FrameBuffer.h" />
+    <ClInclude Include="src\NightEngine\Animation\Animation.h" />
+    <ClInclude Include="src\NightEngine\Renderer\TextRendering.h" />
+    <ClInclude Include="src\NightEngine\Audio\AudioEngine.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Audio.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1436,65 +1410,37 @@
     <ClCompile Include="src\NightEngine\ImGui\ImGuiLayer.cpp">
       <Filter>src\NightEngine\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Buffer.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\OrthographicCamera.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\OrthographicCameraController.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\RenderCommand.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Renderer.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Renderer2D.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\RendererAPI.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Shader.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Texture.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\VertexArray.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
-      <Filter>src\Platform\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
-      <Filter>src\Platform\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\hzpch.cpp">
+    <ClCompile Include="src\nepch.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="src\NightEngine\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\Shader.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\VertexBuffer.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\Texture.cpp" />
+    <ClCompile Include="src\NightEngine\Timer\Timer.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\Camera2D.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\WinData.cpp" />
+    <ClCompile Include="src\Serialization\JSONSerialization.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector2D.cpp" />
+    <ClCompile Include="src\NightEngine\Core\Input.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Sprite.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Components.cpp" />
+    <ClCompile Include="src\NightEngine\ResourceManager\ResourceManager.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\SpriteRendering.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector3D.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector4D.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\FrameBuffer.cpp" />
+    <ClCompile Include="src\NightEngine\Animation\Animation.cpp" />
+    <ClCompile Include="src\Platform\Windows\Window.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\TextRendering.cpp" />
+    <ClCompile Include="src\NightEngine\Audio\AudioEngine.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Audio.cpp" />
   </ItemGroup>
 </Project>

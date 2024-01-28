@@ -14,13 +14,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "NightEngine/vendor/GLFW/include"
-IncludeDir["Glad"] = "NightEngine/vendor/Glad/include"
 IncludeDir["ImGui"] = "NightEngine/vendor/imgui"
 IncludeDir["glm"] = "NightEngine/vendor/glm"
 IncludeDir["stb_image"] = "NightEngine/vendor/stb_image"
 
 include "NightEngine/vendor/GLFW"
-include "NightEngine/vendor/Glad"
 include "NightEngine/vendor/imgui"
 
 project "NightEngine"
@@ -33,8 +31,8 @@ project "NightEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	pchheader "hzpch.h"
-	pchsource "NightEngine/src/hzpch.cpp"
+	pchheader "nepch.h"
+	pchsource "NightEngine/src/nepch.cpp"
 
 	files
 	{
@@ -57,7 +55,6 @@ project "NightEngine"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}"
@@ -66,7 +63,6 @@ project "NightEngine"
 	links
 	{
 		"GLFW",
-		"Glad",
 		"ImGui",
 		"opengl32.lib"
 	}

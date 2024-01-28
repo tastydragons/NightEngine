@@ -1,6 +1,6 @@
 #pragma once
 
-#include "hzpch.h"
+#include "nepch.h"
 #include "NightEngine/Core/Core.h"
 
 namespace Night

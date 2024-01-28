@@ -1,24 +1,27 @@
 #pragma once
 
-#include <memory>
-#include "NightEngine/Renderer/Buffer.h"
+#include "Buffer.h"
 
 namespace Night
 {
 	class VertexArray
 	{
 	public:
-		virtual ~VertexArray() {}
+		VertexArray();
+		~VertexArray();
+		void Bind() const;
+		void Unbind() const;
 
-		virtual void Bind() const = 0;
-		virtual void Unbind() const = 0;
+		void AddVertexBuffer(const std::shared_ptr<VertexBuffer>& vertexbuffer);
+		void SetIndexBuffer(const std::shared_ptr<IndexBuffer>& indexBuffer);
 
-		virtual void AddVertexBuffer(const Ref<VertexBuffer>& vertexBuffer) = 0;
-		virtual void SetIndexBuffer(const Ref<IndexBuffer>& indexBuffer) = 0;
-
-		virtual const std::vector<Ref<VertexBuffer>>& GetVertexBuffers() const = 0;
-		virtual const Ref<IndexBuffer>& GetIndexBuffer() const = 0;
-
-		static Ref<VertexArray> Create();
+		const std::vector<std::shared_ptr<VertexBuffer>>& GetVertexBuffers() const { return mVertexBuffers; }
+		const std::shared_ptr<IndexBuffer>& GetIndexBuffer() const { return mIndexBuffers; }
+		static Ref<VertexArray> Create() { return CreateRef<VertexArray>(); }
+	private:
+		unsigned int mRenderID;
+		unsigned int mVBIndex = 0;
+		std::vector<std::shared_ptr<VertexBuffer>> mVertexBuffers;
+		std::shared_ptr<IndexBuffer> mIndexBuffers;
 	};
 }
