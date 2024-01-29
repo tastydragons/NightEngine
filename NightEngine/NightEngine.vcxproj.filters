@@ -1426,6 +1426,9 @@
     <ClInclude Include="src\NightEngine\Math\Matrix4x4.h" />
     <ClInclude Include="src\NightEngine\Math\NEMath.h" />
     <ClInclude Include="src\NightEngine\Math\Physics.h" />
+    <ClInclude Include="src\Serialization\JSONIncludes.h" />
+    <ClInclude Include="src\Serialization\JSONSerialization.h" />
+    <ClInclude Include="src\NightEngine\Animation\Animation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1513,5 +1516,7 @@
     <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp" />
     <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp" />
     <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
+    <ClCompile Include="src\Serialization\JSONSerialization.cpp" />
+    <ClCompile Include="src\NightEngine\Animation\Animation.cpp" />
   </ItemGroup>
 </Project>
