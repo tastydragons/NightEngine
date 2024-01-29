@@ -2,25 +2,51 @@
 
 #include "NightEngine/Core/Core.h"
 
+#define p_Input Night::Input::GetInstance()
+
+
 namespace Night
 {
+	template class NIGHT_API std::vector <int, std::allocator<int>>;
+	template class NIGHT_API std::unordered_map<int, int, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<const int, int>>>;
+
+	using keystatus = int;
+	using keycode = int;
+	using mousestatus = int;
+	using mousecode = int;
+
 	class NIGHT_API Input
 	{
 	public:
-		inline static bool IsKeyPressed(int keycode) { return s_Instance->IsKeyPressedImpl(keycode); }
+		//Pointer to input system
+		static std::unique_ptr<Input>& GetInstance();
 
-		inline static bool IsMouseButtonPressed(int button) { return s_Instance->IsMouseButtonPressedImpl(button); }
-		inline static std::pair<float, float> GetMousePosition() { return s_Instance->GetMousePositionImpl(); }
-		inline static float GetMouseX() { return s_Instance->GetMouseXImpl(); }
-		inline static float GetMouseY() { return s_Instance->GetMouseYImpl(); }
-	protected:
-		virtual bool IsKeyPressedImpl(int keycode) = 0;
+		// key inputs 
+		bool KeyPressed(const int& key);
+		bool KeyHold(const int& key);
+		bool KeyReleased(const int& key);
 
-		virtual bool IsMouseButtonPressedImpl(int button) = 0;
-		virtual std::pair<float, float> GetMousePositionImpl() = 0;
-		virtual float GetMouseXImpl() = 0;
-		virtual float GetMouseYImpl() = 0;
-	private:
-		static Input* s_Instance;
+		void SetKeyStatus(keycode key, keystatus status);
+		void ResetPressedKey();
+
+		//mouse inputs
+		bool MousePressed(const int& key);
+		bool MouseHold(const int& key);
+		bool MouseIsReleased(const int& key);
+
+		void SetMouseStatus(mousecode key, mousestatus status);
+		void ResetPressedMouse();
+
+		bool isKeyPressed(keycode key);
+
+	public:
+		//data
+		std::unordered_map<keycode, keystatus> mKeyStatus;
+		std::unordered_map<mousecode, mousestatus> mMouseStatus;
+		std::vector<keycode> mReset;
+		std::vector<mousecode> mouseReset;
+
+		double mMouseScrollStatus = 0.0f;
+
 	};
 }

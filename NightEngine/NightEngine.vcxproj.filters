@@ -90,9 +90,6 @@
     <ClInclude Include="src\NightEngine\Core\Timestep.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Core\Window.h">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClInclude>
     <ClInclude Include="src\NightEngine\Events\ApplicationEvent.h">
       <Filter>src\NightEngine\Events</Filter>
     </ClInclude>
@@ -156,10 +153,7 @@
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
-      <Filter>src\Platform\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+    <ClInclude Include="src\Platform\Windows\Window.h">
       <Filter>src\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h">
@@ -1414,6 +1408,24 @@
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\VertexBuffer.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Camera.h" />
+    <ClInclude Include="src\Platform\System\System.h" />
+    <ClInclude Include="src\Platform\System\SystemManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\Types.h" />
+    <ClInclude Include="src\NightEngine\ECS\EntityManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\ComponentArray.h" />
+    <ClInclude Include="src\NightEngine\ECS\ComponentManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Components.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\IComponent.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Sprite.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector2D.h" />
+    <ClInclude Include="src\NightEngine\Math\MathHeader.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector3D.h" />
+    <ClInclude Include="src\NightEngine\Math\Vector4D.h" />
+    <ClInclude Include="src\NightEngine\Math\Matrix3x3.h" />
+    <ClInclude Include="src\NightEngine\Math\Matrix4x4.h" />
+    <ClInclude Include="src\NightEngine\Math\NEMath.h" />
+    <ClInclude Include="src\NightEngine\Math\Physics.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1482,10 +1494,7 @@
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
-      <Filter>src\Platform\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+    <ClCompile Include="src\Platform\Windows\Window.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp">
@@ -1495,5 +1504,14 @@
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\VertexBuffer.cpp" />
+    <ClCompile Include="src\NightEngine\Core\Input.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Components.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Sprite.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector2D.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector3D.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Vector4D.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp" />
+    <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
   </ItemGroup>
 </Project>

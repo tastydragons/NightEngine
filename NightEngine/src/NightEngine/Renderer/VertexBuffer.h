@@ -13,7 +13,7 @@ namespace Night
 
 		virtual void Bind() const override;
 		virtual void Unbind() const override;
-		virtual void SetBufferData(const void* data, unsigned int size) override;
+		virtual void SetBufferData(const void* data, unsigned int size);
 
 		virtual const BufferLayout& GetLayout() const override { return mLayout; }
 		virtual void  SetLayout(const BufferLayout& layout) override { mLayout = layout; }
