@@ -87,9 +87,6 @@
     <ClInclude Include="src\NightEngine\Core\MouseButtonCodes.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Core\Timestep.h">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClInclude>
     <ClInclude Include="src\NightEngine\Events\ApplicationEvent.h">
       <Filter>src\NightEngine\Events</Filter>
     </ClInclude>
@@ -1429,6 +1426,26 @@
     <ClInclude Include="src\Serialization\JSONIncludes.h" />
     <ClInclude Include="src\Serialization\JSONSerialization.h" />
     <ClInclude Include="src\NightEngine\Animation\Animation.h" />
+    <ClInclude Include="src\NightEngine\Audio\AudioEngine.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Audio.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\WinData.h" />
+    <ClInclude Include="src\NightEngine\ResourceManager\ResourceManager.h" />
+    <ClInclude Include="src\NightEngine\Timer\Timer.h" />
+    <ClInclude Include="src\NightEngine\Timer\FPS.h" />
+    <ClInclude Include="src\NightEngine\Renderer\Graphics.h" />
+    <ClInclude Include="src\NightEngine\ECS\SceneManager.h" />
+    <ClInclude Include="src\NightEngine\ECS\ECS.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Attributes.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\CameraComponent.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Collider.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\EnemyAttributes.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\HUDComponent.h" />
+    <ClInclude Include="src\NightEngine\Scripts\IScript.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\NameTag.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\PlayerAttributes.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\RigidBody.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Tag.h" />
+    <ClInclude Include="src\NightEngine\ECS\Components\Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1518,5 +1535,22 @@
     <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
     <ClCompile Include="src\Serialization\JSONSerialization.cpp" />
     <ClCompile Include="src\NightEngine\Animation\Animation.cpp" />
+    <ClCompile Include="src\NightEngine\Audio\AudioEngine.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Audio.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\WinData.cpp" />
+    <ClCompile Include="src\NightEngine\ResourceManager\ResourceManager.cpp" />
+    <ClCompile Include="src\NightEngine\Timer\Timer.cpp" />
+    <ClCompile Include="src\NightEngine\Renderer\Graphics.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\SceneManager.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Attributes.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\CameraComponent.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Collider.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\EnemyAttributes.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\HUDComponent.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\NameTag.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\PlayerAttributes.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\RigidBody.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Tag.cpp" />
+    <ClCompile Include="src\NightEngine\ECS\Components\Transform.cpp" />
   </ItemGroup>
 </Project>
