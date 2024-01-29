@@ -1,5 +1,7 @@
 #pragma once
 
+#include <GL/glew.h>
+
 namespace Night
 {
 	enum class ShaderDataType

@@ -111,13 +111,10 @@
     <ClInclude Include="src\NightEngine\Renderer\Buffer.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\GraphicsContext.h">
+    <ClInclude Include="src\NightEngine\Renderer\Camera2D.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\OrthographicCamera.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\OrthographicCameraController.h">
+    <ClInclude Include="src\NightEngine\Renderer\FrameBuffer.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\RenderCommand.h">
@@ -126,10 +123,10 @@
     <ClInclude Include="src\NightEngine\Renderer\Renderer.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Renderer2D.h">
+    <ClInclude Include="src\NightEngine\Renderer\SpriteRendering.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\RendererAPI.h">
+    <ClInclude Include="src\NightEngine\Renderer\TextRendering.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\Shader.h">
@@ -1416,6 +1413,7 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="src\NightEngine\Renderer\VertexBuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
@@ -1439,10 +1437,10 @@
     <ClCompile Include="src\NightEngine\Renderer\Buffer.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\OrthographicCamera.cpp">
+    <ClCompile Include="src\NightEngine\Renderer\Camera2D.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\OrthographicCameraController.cpp">
+    <ClCompile Include="src\NightEngine\Renderer\FrameBuffer.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\RenderCommand.cpp">
@@ -1451,10 +1449,10 @@
     <ClCompile Include="src\NightEngine\Renderer\Renderer.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Renderer2D.cpp">
+    <ClCompile Include="src\NightEngine\Renderer\SpriteRendering.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\RendererAPI.cpp">
+    <ClCompile Include="src\NightEngine\Renderer\TextRendering.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\Shader.cpp">
@@ -1496,5 +1494,6 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="src\NightEngine\Renderer\VertexBuffer.cpp" />
   </ItemGroup>
 </Project>

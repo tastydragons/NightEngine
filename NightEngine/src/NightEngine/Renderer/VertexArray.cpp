@@ -1,20 +1,71 @@
 #include "hzpch.h"
-#include "VertexArray.h"
 
-#include "Renderer.h"
-#include "Platform/OpenGL/OpenGLVertexArray.h"
+#include "VertexArray.h"
 
 namespace Night
 {
-	Ref<VertexArray> VertexArray::Create()
+	////////////Vertex Array///////////
+	/*!*************************************************************************
+	Constructor for VertexArray
+	****************************************************************************/
+	VertexArray::VertexArray()
 	{
-		switch (Renderer::GetAPI())
+		glCreateVertexArrays(1, &mRenderID);
+	}
+
+	/*!*************************************************************************
+	Destructor for VertexArray
+	****************************************************************************/
+	VertexArray::~VertexArray()
+	{
+		glDeleteVertexArrays(0, &mRenderID);
+	}
+
+	/*!*************************************************************************
+	Bind VertexArray
+	****************************************************************************/
+	void VertexArray::Bind() const
+	{
+		glBindVertexArray(mRenderID);
+	}
+
+	/*!*************************************************************************
+	Bind VertexArray
+	****************************************************************************/
+	void VertexArray::Unbind() const
+	{
+		glBindVertexArray(0);
+	}
+
+	/*!*************************************************************************
+	Add vertex buffer
+	****************************************************************************/
+	void VertexArray::AddVertexBuffer(const std::shared_ptr<VertexBuffer>& vertexbuffer)
+	{
+		glBindVertexArray(mRenderID);
+		vertexbuffer->Bind();
+
+		const auto& layout = vertexbuffer->GetLayout();
+		for (const auto& element : layout)
 		{
-		case RendererAPI::API::None: NIGHT_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-		case RendererAPI::API::OpenGL: return std::make_shared<OpenGLVertexArray>();
+			glEnableVertexAttribArray(mVBIndex);
+			glVertexAttribPointer(mVBIndex, element.GetComponentCount(),
+				GL_FLOAT, element.Normalized, layout.GetStride(), (const void*)element.Offset);
+
+			mVBIndex++;
 		}
 
-		NIGHT_CORE_ASSERT(false, "Unknown RendererAPI");
-		return nullptr;
+		mVertexBuffers.push_back(vertexbuffer);
+	}
+
+	/*!*************************************************************************
+	Set index buffer
+	****************************************************************************/
+	void VertexArray::SetIndexBuffer(const std::shared_ptr<IndexBuffer>& indexBuffer)
+	{
+		glBindVertexArray(mRenderID);
+		indexBuffer->Bind();
+
+		mIndexBuffers = indexBuffer;
 	}
 }

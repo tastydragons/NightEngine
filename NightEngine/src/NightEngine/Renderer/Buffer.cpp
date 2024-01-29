@@ -1,45 +1,31 @@
 #include "hzpch.h"
+
 #include "NightEngine/Renderer/Buffer.h"
-
-#include "NightEngine/Renderer/Renderer.h"
-
-#include "Platform/OpenGL/OpenGLBuffer.h"
+#include "NightEngine/Renderer/VertexBuffer.h"
 
 namespace Night
 {
+	/*!*************************************************************************
+	Dynamic draw buffer
+	****************************************************************************/
 	Ref<VertexBuffer> VertexBuffer::Create(uint32_t size)
 	{
-		switch (Renderer::GetAPI())
-		{
-		case RendererAPI::API::None:		NIGHT_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-		case RendererAPI::API::OpenGL:	return CreateRef<OpenGLVertexBuffer>(size);
-		}
-
-		NIGHT_CORE_ASSERT(false, "Unknown RendererAPI!");
-		return nullptr;
+		return CreateRef<VBuffer>(size);
 	}
 
-	Ref<VertexBuffer> VertexBuffer::Create(float* vertices, uint32_t size)
+	/*!*************************************************************************
+	Static draw buffer
+	****************************************************************************/
+	Ref<VertexBuffer> VertexBuffer::Create(float* data, unsigned int size)
 	{
-		switch (Renderer::GetAPI())
-		{
-		case RendererAPI::API::None:		NIGHT_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-		case RendererAPI::API::OpenGL:	return CreateRef<OpenGLVertexBuffer>(vertices, size);
-		}
-
-		NIGHT_CORE_ASSERT(false, "Unknown RendererAPI!");
-		return nullptr;
+		return CreateRef<VBuffer>(data, size);
 	}
 
-	Ref<IndexBuffer> IndexBuffer::Create(uint32_t* indices, uint32_t size)
+	/*!*************************************************************************
+	draw buffer
+	****************************************************************************/
+	Ref<IndexBuffer> IndexBuffer::Create(unsigned int* indices, unsigned int count)
 	{
-		switch (Renderer::GetAPI())
-		{
-		case RendererAPI::API::None:		NIGHT_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-		case RendererAPI::API::OpenGL:	return CreateRef<OpenGLIndexBuffer>(indices, size);
-		}
-
-		NIGHT_CORE_ASSERT(false, "Unknown RendererAPI!");
-		return nullptr;
+		return CreateRef<IBuffer>(indices, count);
 	}
 }
