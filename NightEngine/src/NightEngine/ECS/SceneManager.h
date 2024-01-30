@@ -10,6 +10,8 @@
 
 #include "Serialization/JSONSerialization.h"
 
+#define p_Scene Night::SceneManager::GetInstance()
+
 namespace Night
 {
 	class SceneManager : public JSONSerializer

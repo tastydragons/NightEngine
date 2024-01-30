@@ -1,46 +1,29 @@
 #pragma once
 
 #include "Core.h"
-
-#include "Window.h"
-#include "NightEngine/Core/LayerStack.h"
-#include "NightEngine/Events/Event.h"
-#include "NightEngine/Events/ApplicationEvent.h"
-
-#include "NightEngine/Core/Timestep.h"
-
-#include "NightEngine/ImGui/ImGuiLayer.h"
+#include "Log.h"
+#include "Platform/System/SystemManager.h"
+#include "NightEngine/ECS/ECS.h"
 
 namespace Night
 {
 	class Application
 	{
 	public:
+		enum class state
+		{
+			pause,
+			play,
+			quit
+		};
+
 		Application();
-		virtual ~Application();
+		virtual ~Application(); // will be override
+		void SystemInput(System* system);
+		void Run();				//run the application 
+		void End();
 
-		void Run();
-
-		void OnEvent(Event& e);
-
-		void PushLayer(Layer* layer);
-		void PushOverlay(Layer* layer);
-
-		inline Window& GetWindow() { return *m_Window; }
-
-		inline static Application& Get() { return *s_Instance; }
 	private:
-		bool OnWindowClose(WindowCloseEvent& e);
-		bool OnWindowResize(WindowResizeEvent& e);
-	private:
-		std::unique_ptr<Window> m_Window;
-		ImGuiLayer* m_ImGuiLayer;
-		bool m_Running = true;
-		bool m_Minimized = false;
-		LayerStack m_LayerStack;
-		float m_LastFrameTime = 0.0f;
-	private:
-		static Application* s_Instance;
 	};
 
 	// To be defined in CLIENT

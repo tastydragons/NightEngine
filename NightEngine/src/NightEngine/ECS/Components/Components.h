@@ -6,7 +6,7 @@
 #include "Collider.h"
 #include "NameTag.h"
 #include "Sprite.h"
-//#include "Logic.h"
+#include "Logic.h"
 #include "Tag.h"
 #include "Audio.h"
 #include "HUDComponent.h"
@@ -20,7 +20,7 @@
 #define C_ColliderComponent Night::Collider::Collider()
 #define C_NameTagComponent Night::NameTag::NameTag()
 #define C_SpriteComponent Night::Sprite::Sprite()
-//#define C_LogicComponent Night::Logic::Logic()
+#define C_LogicComponent Night::Logic::Logic()
 #define C_TagComponent Night::Tag::Tag()
 #define C_AudioComponent Night::Audio::Audio()
 #define C_HUDComponent Night::HUDComponent::HUDComponent()
