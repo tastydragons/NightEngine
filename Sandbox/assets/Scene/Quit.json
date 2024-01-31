@@ -1,0 +1,220 @@
+{
+    "Number of Entities": {
+        "Entities": 3
+    },
+    "EntitySignatures": [
+        "00000000000000000000000011111101",
+        "00000000000000000000000011111101",
+        "00000000000000000000000011111101"
+    ],
+    "Components": {
+        "0": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 4.0,
+                "scaleY": 2.25,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": 0.0,
+                "minX2": 0.0,
+                "minY1": 0.0,
+                "minY2": 0.0,
+                "maxX1": 0.0,
+                "maxX2": 0.0,
+                "maxY1": 0.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "quit Game BackGround"
+            },
+            {
+                "TextureName": "QUIT_GAME",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "AudioManager",
+                "1": "NoLoopBackgroundAudio",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Untagged",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "GameOver.wav",
+                    "Channel": 2,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 1,
+                "BGM Volume": 1.0,
+                "SFX Volume": 1.0,
+                "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "1": [
+            {
+                "posX": -0.550000011920929,
+                "posY": -0.20000000298023224,
+                "scaleX": 1.2899999618530273,
+                "scaleY": 0.5,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 0,
+                "ColliderType2": 0,
+                "minX1": -0.5,
+                "minX2": 0.0,
+                "minY1": -0.5,
+                "minY2": 0.0,
+                "maxX1": 0.5,
+                "maxX2": 0.0,
+                "maxY1": 0.5,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Yes"
+            },
+            {
+                "TextureName": "YES_Y",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Yes",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 1.0,
+                "SFX Volume": 1.0,
+                "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "2": [
+            {
+                "posX": 0.550000011920929,
+                "posY": -0.20000000298023224,
+                "scaleX": 1.2899999618530273,
+                "scaleY": 0.5,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -0.5,
+                "minX2": 0.0,
+                "minY1": -0.5,
+                "minY2": 0.0,
+                "maxX1": 0.5,
+                "maxX2": 0.0,
+                "maxY1": 0.5,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Restart"
+            },
+            {
+                "TextureName": "NO_Y",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "No",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 1.0,
+                "SFX Volume": 1.0,
+                "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
+}

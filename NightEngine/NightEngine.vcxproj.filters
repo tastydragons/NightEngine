@@ -7,29 +7,86 @@
     <Filter Include="src\NightEngine">
       <UniqueIdentifier>{2CF900B1-9884-6E75-A195-F1690DA0CA75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\NightEngine\Animation">
+      <UniqueIdentifier>{1B191077-87DB-4301-D08B-D28D3C8D1CDF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\Audio">
+      <UniqueIdentifier>{2DB89683-9924-527E-6218-EADBCE4374E6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\NightEngine\Core">
       <UniqueIdentifier>{04B9A08F-F047-2A59-9966-3E5485D43AFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\ECS">
+      <UniqueIdentifier>{76A30CCE-E204-EADB-6B72-308ED7D2209B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\ECS\Components">
+      <UniqueIdentifier>{CBB25A50-B7D8-24B7-A01E-AA828CE34983}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\NightEngine\Events">
       <UniqueIdentifier>{901BD5FF-7C15-FE51-6582-9462511B64BE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\NightEngine\GUI">
+      <UniqueIdentifier>{40AE0CCE-AC0F-EADB-357D-308EA1DD209B}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\NightEngine\ImGui">
       <UniqueIdentifier>{569F2284-C20B-DE7E-8BFF-75DCF72A00E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\Math">
+      <UniqueIdentifier>{85F9A58F-7188-2F59-1AA7-4354061540FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\Physics">
+      <UniqueIdentifier>{9E68FD29-0AA0-45C1-13AA-A9E47F606CBA}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\NightEngine\Renderer">
       <UniqueIdentifier>{524E8540-3E73-D4C0-67BE-B9505342D3DE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\NightEngine\ResourceManager">
+      <UniqueIdentifier>{3EBA28BB-AA9D-37FB-B3A0-65371F03FE4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\Scripts">
+      <UniqueIdentifier>{634CBE04-CF83-069C-D88D-6ABF44442D95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NightEngine\Timer">
+      <UniqueIdentifier>{FC1AE884-6887-A37F-317B-3BDD9DA6C5E7}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Platform\OpenGL">
-      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
+    <Filter Include="src\Platform\LevelEditor">
+      <UniqueIdentifier>{2F0449E6-1B29-9866-4474-7DF630F89684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic">
+      <UniqueIdentifier>{DE7CF4F1-CA60-B547-33C1-AF9A1FC49FC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\StateMachine">
+      <UniqueIdentifier>{83448C72-EF27-9BB2-F82A-C9EE648D6103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States">
+      <UniqueIdentifier>{E1309F67-4DF3-D2F1-96A3-617E02A5ABCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States\BossStates">
+      <UniqueIdentifier>{3B515C36-2738-1E2E-D088-844BBC4E9794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States\EnemyStates">
+      <UniqueIdentifier>{A24811C7-0E0D-10B7-D772-408143F6ABEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States\GateStates">
+      <UniqueIdentifier>{257B55A2-1162-179A-BAB2-7DB7A6789000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States\HazardStates">
+      <UniqueIdentifier>{1E7B8CB0-0ACD-63A0-F3EB-A0B0DFDC7C89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Logic\States\PlayerStates">
+      <UniqueIdentifier>{F11E1DB0-DD70-F49F-C68F-31B0B2800D89}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform\System">
       <UniqueIdentifier>{15EE9341-814F-714F-0ABD-B701761DA80E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform\Windows">
       <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Serialization">
+      <UniqueIdentifier>{7A8EE480-E6A4-E216-2F1C-6E389B71B39E}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
@@ -60,6 +117,12 @@
     <ClInclude Include="src\Night.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\NightEngine\Animation\Animation.h">
+      <Filter>src\NightEngine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Audio\AudioEngine.h">
+      <Filter>src\NightEngine\Audio</Filter>
+    </ClInclude>
     <ClInclude Include="src\NightEngine\Core\Application.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
@@ -75,17 +138,77 @@
     <ClInclude Include="src\NightEngine\Core\KeyCodes.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Core\Layer.h">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\NightEngine\Core\LayerStack.h">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClInclude>
     <ClInclude Include="src\NightEngine\Core\Log.h">
       <Filter>src\NightEngine\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Core\MouseButtonCodes.h">
       <Filter>src\NightEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\ComponentArray.h">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\ComponentManager.h">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Attributes.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Audio.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\CameraComponent.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Collider.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Components.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\EnemyAttributes.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\HUDComponent.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\IComponent.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Logic.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\NameTag.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\PlayerAttributes.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\RigidBody.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Sprite.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Tag.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\Transform.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Components\WinData.h">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\ECS.h">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\EntityManager.h">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\SceneManager.h">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\ECS\Types.h">
+      <Filter>src\NightEngine\ECS</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Events\ApplicationEvent.h">
       <Filter>src\NightEngine\Events</Filter>
@@ -99,10 +222,46 @@
     <ClInclude Include="src\NightEngine\Events\MouseEvent.h">
       <Filter>src\NightEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\NightEngine\GUI\GUI.h">
+      <Filter>src\NightEngine\GUI</Filter>
+    </ClInclude>
     <ClInclude Include="src\NightEngine\ImGui\ImGuiLayer.h">
       <Filter>src\NightEngine\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\MathHeader.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Matrix3x3.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Matrix4x4.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\NEMath.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Physics.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Vector2D.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Vector3D.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Math\Vector4D.h">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Physics\CollisionSystem.h">
+      <Filter>src\NightEngine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Physics\PhysicsSystem.h">
+      <Filter>src\NightEngine\Physics</Filter>
+    </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\Buffer.h">
+      <Filter>src\NightEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Renderer\Camera.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\Camera2D.h">
@@ -111,10 +270,13 @@
     <ClInclude Include="src\NightEngine\Renderer\FrameBuffer.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\RenderCommand.h">
+    <ClInclude Include="src\NightEngine\Renderer\Graphics.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\Renderer.h">
+      <Filter>src\NightEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Renderer\Shader.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\SpriteRendering.h">
@@ -123,35 +285,194 @@
     <ClInclude Include="src\NightEngine\Renderer\TextRendering.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\Shader.h">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\Texture.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\NightEngine\Renderer\VertexArray.h">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\Renderer\VertexBuffer.h">
+      <Filter>src\NightEngine\Renderer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\ResourceManager\ResourceManager.h">
+      <Filter>src\NightEngine\ResourceManager</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\Scripts\AudioManager.h">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\Scripts\BackgroundAudio.h">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\Scripts\BossScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClInclude Include="src\NightEngine\Scripts\ButtonResponse.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\CollisionResponse.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\CutScene.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\DialogueManager.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\EnemyScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\GateController.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\HUDController.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\HazardScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\IScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\PauseMenu.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\PlayerControl.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\ScenarioScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Scripts\SliderScript.h">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Timer\FPS.h">
+      <Filter>src\NightEngine\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NightEngine\Timer\Timer.h">
+      <Filter>src\NightEngine\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\LevelEditor\LevelEditor.h">
+      <Filter>src\Platform\LevelEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\LevelEditor\Picker.h">
+      <Filter>src\Platform\LevelEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\LogicSystem.h">
+      <Filter>src\Platform\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\StateMachine\StateMachine.h">
+      <Filter>src\Platform\Logic\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossAppear.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossAttack.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossChasing.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossDeath.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossIdle.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossNotActive.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\BossStates\BossOnDamage.h">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyAttack.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyChase.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyDamaged.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyDeath.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyHealthDrop.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyIdle.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyNotActive.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyRetreat.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyTransition.h">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\GateStates\GateLocked.h">
+      <Filter>src\Platform\Logic\States\GateStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\GateStates\GateUnlocked.h">
+      <Filter>src\Platform\Logic\States\GateStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardCharging.h">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardFire.h">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardIdle.h">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\IState.h">
+      <Filter>src\Platform\Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnAttack_1.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnAttack_2.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnBlock.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_1.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_2.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDamaged.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDash.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDieded.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnIdle.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnMove.h">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\System\System.h">
+      <Filter>src\Platform\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\System\SystemManager.h">
+      <Filter>src\Platform\System</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\Window.h">
       <Filter>src\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serialization\JSONIncludes.h">
+      <Filter>src\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serialization\JSONSerialization.h">
+      <Filter>src\Serialization</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h">
       <Filter>src</Filter>
@@ -1404,122 +1725,103 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\NightEngine\Renderer\VertexBuffer.h" />
-    <ClInclude Include="src\NightEngine\Renderer\Camera.h" />
-    <ClInclude Include="src\Platform\System\System.h" />
-    <ClInclude Include="src\Platform\System\SystemManager.h" />
-    <ClInclude Include="src\NightEngine\ECS\Types.h" />
-    <ClInclude Include="src\NightEngine\ECS\EntityManager.h" />
-    <ClInclude Include="src\NightEngine\ECS\ComponentArray.h" />
-    <ClInclude Include="src\NightEngine\ECS\ComponentManager.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Components.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\IComponent.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Sprite.h" />
-    <ClInclude Include="src\NightEngine\Math\Vector2D.h" />
-    <ClInclude Include="src\NightEngine\Math\MathHeader.h" />
-    <ClInclude Include="src\NightEngine\Math\Vector3D.h" />
-    <ClInclude Include="src\NightEngine\Math\Vector4D.h" />
-    <ClInclude Include="src\NightEngine\Math\Matrix3x3.h" />
-    <ClInclude Include="src\NightEngine\Math\Matrix4x4.h" />
-    <ClInclude Include="src\NightEngine\Math\NEMath.h" />
-    <ClInclude Include="src\NightEngine\Math\Physics.h" />
-    <ClInclude Include="src\Serialization\JSONIncludes.h" />
-    <ClInclude Include="src\Serialization\JSONSerialization.h" />
-    <ClInclude Include="src\NightEngine\Animation\Animation.h" />
-    <ClInclude Include="src\NightEngine\Audio\AudioEngine.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Audio.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\WinData.h" />
-    <ClInclude Include="src\NightEngine\ResourceManager\ResourceManager.h" />
-    <ClInclude Include="src\NightEngine\Timer\Timer.h" />
-    <ClInclude Include="src\NightEngine\Timer\FPS.h" />
-    <ClInclude Include="src\NightEngine\Renderer\Graphics.h" />
-    <ClInclude Include="src\NightEngine\ECS\SceneManager.h" />
-    <ClInclude Include="src\NightEngine\ECS\ECS.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Attributes.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\CameraComponent.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Collider.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\EnemyAttributes.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\HUDComponent.h" />
-    <ClInclude Include="src\NightEngine\Scripts\IScript.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\NameTag.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\PlayerAttributes.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\RigidBody.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Tag.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Transform.h" />
-    <ClInclude Include="src\NightEngine\Physics\PhysicsSystem.h" />
-    <ClInclude Include="src\NightEngine\Physics\CollisionSystem.h" />
-    <ClInclude Include="src\Platform\Logic\LogicSystem.h" />
-    <ClInclude Include="src\NightEngine\GUI\GUI.h" />
-    <ClInclude Include="src\NightEngine\Scripts\AudioManager.h" />
-    <ClInclude Include="src\NightEngine\Scripts\BackgroundAudio.h" />
-    <ClInclude Include="src\Platform\Logic\StateMachine\StateMachine.h" />
-    <ClInclude Include="src\Platform\Logic\States\IState.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossAppear.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossAttack.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossChasing.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossDeath.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossIdle.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossNotActive.h" />
-    <ClInclude Include="src\Platform\Logic\States\BossStates\BossOnDamage.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyAttack.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyChase.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyDamaged.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyDeath.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyHealthDrop.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyIdle.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyNotActive.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyRetreat.h" />
-    <ClInclude Include="src\Platform\Logic\States\EnemyStates\EnemyTransition.h" />
-    <ClInclude Include="src\Platform\Logic\States\GateStates\GateLocked.h" />
-    <ClInclude Include="src\Platform\Logic\States\GateStates\GateUnlocked.h" />
-    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardCharging.h" />
-    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardFire.h" />
-    <ClInclude Include="src\Platform\Logic\States\HazardStates\HazardIdle.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnAttack_1.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnAttack_2.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnBlock.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_1.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_2.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDamaged.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDash.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnDieded.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnIdle.h" />
-    <ClInclude Include="src\Platform\Logic\States\PlayerStates\OnMove.h" />
-    <ClInclude Include="src\NightEngine\ECS\Components\Logic.h" />
-    <ClInclude Include="src\NightEngine\Scripts\BossScript.h" />
-    <ClInclude Include="src\NightEngine\Scripts\ButtonResponse.h" />
-    <ClInclude Include="src\NightEngine\Scripts\CollisionResponse.h" />
-    <ClInclude Include="src\NightEngine\Scripts\CutScene.h" />
-    <ClInclude Include="src\NightEngine\Scripts\DialogueManager.h" />
-    <ClInclude Include="src\NightEngine\Scripts\EnemyScript.h" />
-    <ClInclude Include="src\NightEngine\Scripts\GateController.h" />
-    <ClInclude Include="src\NightEngine\Scripts\HazardScript.h" />
-    <ClInclude Include="src\NightEngine\Scripts\HUDController.h" />
-    <ClInclude Include="src\NightEngine\Scripts\PauseMenu.h" />
-    <ClInclude Include="src\NightEngine\Scripts\PlayerControl.h" />
-    <ClInclude Include="src\NightEngine\Scripts\ScenarioScript.h" />
-    <ClInclude Include="src\NightEngine\Scripts\SliderScript.h" />
-    <ClInclude Include="src\Platform\LevelEditor\LevelEditor.h" />
-    <ClInclude Include="src\Platform\LevelEditor\Picker.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\NightEngine\Animation\Animation.cpp">
+      <Filter>src\NightEngine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Audio\AudioEngine.cpp">
+      <Filter>src\NightEngine\Audio</Filter>
+    </ClCompile>
     <ClCompile Include="src\NightEngine\Core\Application.cpp">
       <Filter>src\NightEngine\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Core\Layer.cpp">
-      <Filter>src\NightEngine\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="src\NightEngine\Core\LayerStack.cpp">
+    <ClCompile Include="src\NightEngine\Core\Input.cpp">
       <Filter>src\NightEngine\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Core\Log.cpp">
       <Filter>src\NightEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Attributes.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Audio.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\CameraComponent.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Collider.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Components.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\EnemyAttributes.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\HUDComponent.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Logic.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\NameTag.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\PlayerAttributes.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\RigidBody.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Sprite.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Tag.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\Transform.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\Components\WinData.cpp">
+      <Filter>src\NightEngine\ECS\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\ECS\SceneManager.cpp">
+      <Filter>src\NightEngine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\GUI\GUI.cpp">
+      <Filter>src\NightEngine\GUI</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\ImGui\ImGuiBuild.cpp">
       <Filter>src\NightEngine\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\ImGui\ImGuiLayer.cpp">
       <Filter>src\NightEngine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Physics.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Vector2D.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Vector3D.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Math\Vector4D.cpp">
+      <Filter>src\NightEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Physics\CollisionSystem.cpp">
+      <Filter>src\NightEngine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Physics\PhysicsSystem.cpp">
+      <Filter>src\NightEngine\Physics</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\Buffer.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
@@ -1530,10 +1832,13 @@
     <ClCompile Include="src\NightEngine\Renderer\FrameBuffer.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\RenderCommand.cpp">
+    <ClCompile Include="src\NightEngine\Renderer\Graphics.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\Renderer.cpp">
+      <Filter>src\NightEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Renderer\Shader.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\SpriteRendering.cpp">
@@ -1542,35 +1847,155 @@
     <ClCompile Include="src\NightEngine\Renderer\TextRendering.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\Shader.cpp">
-      <Filter>src\NightEngine\Renderer</Filter>
-    </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\Texture.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\NightEngine\Renderer\VertexArray.cpp">
       <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\Renderer\VertexBuffer.cpp">
+      <Filter>src\NightEngine\Renderer</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\ResourceManager\ResourceManager.cpp">
+      <Filter>src\NightEngine\ResourceManager</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\Scripts\AudioManager.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\Scripts\BackgroundAudio.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\Scripts\ButtonResponse.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
-      <Filter>src\Platform\OpenGL</Filter>
+    <ClCompile Include="src\NightEngine\Scripts\CollisionResponse.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Scripts\HUDController.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Scripts\PauseMenu.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Scripts\ScenarioScript.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Scripts\SliderScript.cpp">
+      <Filter>src\NightEngine\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NightEngine\Timer\Timer.cpp">
+      <Filter>src\NightEngine\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\LevelEditor\LevelEditor.cpp">
+      <Filter>src\Platform\LevelEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\LevelEditor\Picker.cpp">
+      <Filter>src\Platform\LevelEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\LogicSystem.cpp">
+      <Filter>src\Platform\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\StateMachine\StateMachine.cpp">
+      <Filter>src\Platform\Logic\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossAppear.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossAttack.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossChasing.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossDeath.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossIdle.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossNotActive.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\BossStates\BossOnDamage.cpp">
+      <Filter>src\Platform\Logic\States\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyAttack.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyChase.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyDamaged.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyDeath.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyHealthDrop.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyIdle.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyNotActive.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyRetreat.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyTransition.cpp">
+      <Filter>src\Platform\Logic\States\EnemyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\GateStates\GateLocked.cpp">
+      <Filter>src\Platform\Logic\States\GateStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\GateStates\GateUnlocked.cpp">
+      <Filter>src\Platform\Logic\States\GateStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardCharging.cpp">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardFire.cpp">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardIdle.cpp">
+      <Filter>src\Platform\Logic\States\HazardStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnAttack_1.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnAttack_2.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnBlock.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_1.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_2.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDamaged.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDash.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDieded.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnIdle.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnMove.cpp">
+      <Filter>src\Platform\Logic\States\PlayerStates</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\Window.cpp">
       <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Serialization\JSONSerialization.cpp">
+      <Filter>src\Serialization</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp">
       <Filter>src</Filter>
@@ -1578,81 +2003,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\NightEngine\Renderer\VertexBuffer.cpp" />
-    <ClCompile Include="src\NightEngine\Core\Input.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Components.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Sprite.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Vector2D.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Vector3D.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Vector4D.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Matrix3x3.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Matrix4x4.cpp" />
-    <ClCompile Include="src\NightEngine\Math\Physics.cpp" />
-    <ClCompile Include="src\Serialization\JSONSerialization.cpp" />
-    <ClCompile Include="src\NightEngine\Animation\Animation.cpp" />
-    <ClCompile Include="src\NightEngine\Audio\AudioEngine.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Audio.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\WinData.cpp" />
-    <ClCompile Include="src\NightEngine\ResourceManager\ResourceManager.cpp" />
-    <ClCompile Include="src\NightEngine\Timer\Timer.cpp" />
-    <ClCompile Include="src\NightEngine\Renderer\Graphics.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\SceneManager.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Attributes.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\CameraComponent.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Collider.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\EnemyAttributes.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\HUDComponent.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\NameTag.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\PlayerAttributes.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\RigidBody.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Tag.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Transform.cpp" />
-    <ClCompile Include="src\NightEngine\Physics\PhysicsSystem.cpp" />
-    <ClCompile Include="src\NightEngine\Physics\CollisionSystem.cpp" />
-    <ClCompile Include="src\Platform\Logic\LogicSystem.cpp" />
-    <ClCompile Include="src\NightEngine\GUI\GUI.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\AudioManager.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\BackgroundAudio.cpp" />
-    <ClCompile Include="src\Platform\Logic\StateMachine\StateMachine.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossAppear.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossAttack.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossChasing.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossDeath.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossIdle.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossNotActive.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\BossStates\BossOnDamage.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyAttack.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyChase.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyDamaged.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyDeath.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyHealthDrop.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyIdle.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyNotActive.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyRetreat.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\EnemyStates\EnemyTransition.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\GateStates\GateLocked.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\GateStates\GateUnlocked.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardCharging.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardFire.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\HazardStates\HazardIdle.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnAttack_1.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnAttack_2.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnBlock.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_1.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnChargeAttack_2.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDamaged.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDash.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnDieded.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnIdle.cpp" />
-    <ClCompile Include="src\Platform\Logic\States\PlayerStates\OnMove.cpp" />
-    <ClCompile Include="src\NightEngine\ECS\Components\Logic.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\ButtonResponse.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\CollisionResponse.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\HUDController.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\PauseMenu.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\ScenarioScript.cpp" />
-    <ClCompile Include="src\NightEngine\Scripts\SliderScript.cpp" />
-    <ClCompile Include="src\Platform\LevelEditor\LevelEditor.cpp" />
-    <ClCompile Include="src\Platform\LevelEditor\Picker.cpp" />
   </ItemGroup>
 </Project>

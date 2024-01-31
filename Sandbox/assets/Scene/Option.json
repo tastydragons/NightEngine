@@ -1,0 +1,511 @@
+{
+    "Number of Entities": {
+        "Entities": 11
+    },
+    "EntitySignatures": [
+      "00000000000000000000000010111001",
+      "00000000000000000000000000011001",
+      "00000000000000000000000011111101",
+      "00000000000000000000000000011001",
+      "00000000000000000000000000011001",
+      "00000000000000000000000011111101",
+      "00000000000000000000000011111101",
+      "00000000000000000000000000011001",
+      "00000000000000000000000000011001",
+      "00000000000000000000000000011001",
+      "00000000000000000000000001111101"
+    ],
+    "Components": {
+        "0": [
+            {
+              "posX": 0.0,
+              "posY": 0.0,
+              "scaleX": 4.0,
+              "scaleY": 2.25,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "Background"
+            },
+            {
+                "TextureName": "OPTIONS_SCREEN",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+              "0": "AudioManager",
+              "1": "BackgroundAudio",
+              "ScriptCount": 2
+            },
+            {},
+            {
+              "0": {
+                "AudioPath": "OptionsMenu_BGM.wav",
+                "Channel": 2,
+                "IsLooping": true
+              },
+              "AudioArrCount": 1,
+              "BGM Volume": 0.05999999865889549,
+              "SFX Volume": 1.0,
+              "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "1": [
+            {
+              "posX": 0.0,
+              "posY": 0.291463375091553,
+              "scaleX": 1.639686942100525,
+              "scaleY": 1.0,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "Master Slider"
+            },
+            {
+                "TextureName": "MASTER_VOLUME",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "2": [
+            {
+              "posX": 0.0,
+              "posY": 0.234,
+              "scaleX": 0.09000003337860107,
+              "scaleY": 0.09000003337860107,
+              "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 0,
+                "ColliderType2": 0,
+                "minX1": 0.0,
+                "minX2": 0.0,
+                "minY1": 0.0,
+                "minY2": 0.0,
+                "maxX1": 0.0,
+                "maxX2": 0.0,
+                "maxY1": 0.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Master"
+            },
+            {
+                "TextureName": "VolumeBall",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 1
+            },
+            {
+              "0": "SliderScript",
+              "1": "AudioManager",
+              "ScriptCount": 2
+            },
+            {
+                "Tag": "Untagged",
+                "TargetTag": "Master"
+            },
+            {
+              "0": {
+                "AudioPath": "UI_Click.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "AudioArrCount": 1,
+              "BGM Volume": 0.05999999865889549,
+              "SFX Volume": 1.0,
+              "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "3": [
+            {
+              "posX": 0.0,
+              "posY": 0.0,
+              "scaleX": 1.639686942100525,
+              "scaleY": 1.0,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "BGM Slider"
+            },
+            {
+                "TextureName": "BGM_VOLUME",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "4": [
+            {
+              "posX": 0.0,
+              "posY": -0.301,
+              "scaleX": 1.639686942100525,
+              "scaleY": 1.0,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "SFX Slider"
+            },
+            {
+                "TextureName": "SFX_VOULME",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "5": [
+            {
+              "posX": 0.0,
+              "posY": -0.058,
+              "scaleX": 0.09000003337860107,
+              "scaleY": 0.09000003337860107,
+              "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 0,
+                "ColliderType2": 0,
+                "minX1": 0.0,
+                "minX2": 0.0,
+                "minY1": 0.0,
+                "minY2": 0.0,
+                "maxX1": 0.0,
+                "maxX2": 0.0,
+                "maxY1": 0.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "BGM"
+            },
+            {
+                "TextureName": "VolumeBall",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 1
+            },
+            {
+              "0": "SliderScript",
+              "1": "AudioManager",
+              "ScriptCount": 2
+            },
+            {
+                "Tag": "Untagged",
+                "TargetTag": "BGM"
+            },
+            {
+              "0": {
+                "AudioPath": "UI_Click.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "AudioArrCount": 1,
+              "BGM Volume": 0.05999999865889549,
+              "SFX Volume": 1.0,
+              "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "6": [
+            {
+              "posX": 0.0,
+              "posY": -0.37,
+              "scaleX": 0.09000003337860107,
+              "scaleY": 0.09000000357627869,
+              "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 0,
+                "ColliderType2": 0,
+                "minX1": 0.0,
+                "minX2": 0.0,
+                "minY1": 0.0,
+                "minY2": 0.0,
+                "maxX1": 0.0,
+                "maxX2": 0.0,
+                "maxY1": 0.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "SFX"
+            },
+            {
+                "TextureName": "VolumeBall",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 1
+            },
+            {
+              "0": "SliderScript",
+              "1": "AudioManager",
+              "ScriptCount": 2
+            },
+            {
+                "Tag": "Untagged",
+                "TargetTag": "SFX"
+            },
+            {
+              "0": {
+                "AudioPath": "UI_Click.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "AudioArrCount": 1,
+              "BGM Volume": 0.05999999865889549,
+              "SFX Volume": 1.0,
+              "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "7": [
+            {
+              "posX": 0.029,
+              "posY": 0.062,
+              "scaleX": 1.2899999618530273,
+              "scaleY": 0.49000000953674316,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "none"
+            },
+            {
+                "TextureName": "VOULME_SLIDERBAR",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "8": [
+            {
+              "posX": 0.0299,
+              "posY": -0.241,
+              "scaleX": 1.2899999618530273,
+              "scaleY": 0.49000000953674316,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "none"
+            },
+            {
+                "TextureName": "VOULME_SLIDERBAR",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "9": [
+            {
+              "posX": 0.029999999329447746,
+              "posY": 0.351,
+              "scaleX": 1.2899999618530273,
+              "scaleY": 0.49000000953674316,
+              "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "none"
+            },
+            {
+                "TextureName": "VOULME_SLIDERBAR",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "10": [
+            {
+              "posX": -1.1749645471572876,
+              "posY": -0.515,
+              "scaleX": 1.0536959171295166,
+              "scaleY": 0.41180580854415894,
+              "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -0.09000000357627869,
+                "minX2": 0.0,
+                "minY1": -1.0,
+                "minY2": 0.0,
+                "maxX1": 0.8999999761581421,
+                "maxX2": 0.0,
+                "maxY1": 1.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "none"
+            },
+            {
+                "TextureName": "BACK_Y",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "ScriptCount": 1
+            },
+            {
+                "Tag": "Back",
+                "TargetTag": ""
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
+}

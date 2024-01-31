@@ -1,0 +1,42 @@
+{
+    "Number of Entities": {
+        "Entities": 1
+    },
+    "EntitySignatures": [
+        "00000000000000000000000000011001"
+    ],
+    "Components": {
+        "0": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 1.8,
+                "scaleY": 0.4,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "Splash Screen"
+            },
+            {
+                "TextureName": "DigipenSplash",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
+}

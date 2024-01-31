@@ -1,0 +1,6 @@
+FontIcon Assets/Icons/FontIcon.png
+SoundIcon Assets/Icons/SoundIcon.png
+ShaderIcon Assets/Icons/ShaderIcon.png
+TextIcon Assets/Icons/TextIcon.png
+FolderIcon Assets/Icons/FolderIcon.png
+BackIcon Assets/Icons/BackIcon.png

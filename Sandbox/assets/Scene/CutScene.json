@@ -1,0 +1,407 @@
+{
+    "Number of Entities": {
+        "Entities": 10
+    },
+    "EntitySignatures": [
+        "00000000000000000000000001011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000000011001",
+        "00000000000000000000000010111001"
+    ],
+    "Components": {
+        "0": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 0.5,
+                "scaleY": 0.25,
+                "Rot": -12.92431926727295
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene1"
+            },
+            {
+                "TextureName": "Cutscene1",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {
+                "Tag": "Untagged",
+                "TargetTag": ""
+            },
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "1": [
+            {
+                "posX": 1.1760623455047607,
+                "posY": -1.1842267513275146,
+                "scaleX": 0.4000000059604645,
+                "scaleY": 0.20000000298023224,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene2"
+            },
+            {
+                "TextureName": "Cutscene2",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "2": [
+            {
+                "posX": 1.6926953792572021,
+                "posY": 1.083178997039795,
+                "scaleX": 1.0,
+                "scaleY": 0.5,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene3"
+            },
+            {
+                "TextureName": "Cutscene3",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "3": [
+            {
+                "posX": 2.2091617584228516,
+                "posY": -0.4399261474609375,
+                "scaleX": 1.0,
+                "scaleY": 0.5,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene4"
+            },
+            {
+                "TextureName": "Cutscene4",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "4": [
+            {
+                "posX": -2.0220792293548584,
+                "posY": 1.0622305870056152,
+                "scaleX": 1.0950000286102295,
+                "scaleY": 0.5049999952316284,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene5"
+            },
+            {
+                "TextureName": "Cutscene5",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "5": [
+            {
+                "posX": -2.3614144325256348,
+                "posY": -0.8022180795669556,
+                "scaleX": 1.0049999952316284,
+                "scaleY": 0.4749999940395355,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene6"
+            },
+            {
+                "TextureName": "Cutscene6",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "6": [
+            {
+                "posX": -0.5891096591949463,
+                "posY": -1.2815771102905273,
+                "scaleX": 0.8349999785423279,
+                "scaleY": 0.4350000023841858,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene7"
+            },
+            {
+                "TextureName": "Cutscene7",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "7": [
+            {
+                "posX": -1.2657899856567383,
+                "posY": 0.305606871843338,
+                "scaleX": 0.800000011920929,
+                "scaleY": 0.4000000059604645,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene8"
+            },
+            {
+                "TextureName": "Cutscene8",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "8": [
+            {
+                "posX": -0.02388283610343933,
+                "posY": 1.4787427186965942,
+                "scaleX": 0.699999988079071,
+                "scaleY": 0.4000000059604645,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene9"
+            },
+            {
+                "TextureName": "Cutscene9",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "9": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "CutScene Controller"
+            },
+            {
+                "TextureName": "Blank",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "CutScene",
+                "1": "AudioManager",
+                "2": "BackgroundAudio",
+                "ScriptCount": 3
+            },
+            {},
+            {
+              "0": {
+                "AudioPath": "OptionsMenu_BGM.wav",
+                "Channel": 2,
+                "IsLooping": false
+              },
+              "1": {
+                "AudioPath": "Cutscene1.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "2": {
+                "AudioPath": "Cutscene2.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "3": {
+                "AudioPath": "Cutscene3.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "4": {
+                "AudioPath": "Cutscene4.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "5": {
+                "AudioPath": "Cutscene5.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "6": {
+                "AudioPath": "Cutscene6.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "7": {
+                "AudioPath": "Cutscene7.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "8": {
+                "AudioPath": "Cutscene8.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "9": {
+                "AudioPath": "Cutscene9.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "10": {
+                "AudioPath": "Dialogue_Prompt.wav",
+                "Channel": 3,
+                "IsLooping": false
+              },
+              "AudioArrCount": 11,
+              "BGM Volume": 1.0,
+              "SFX Volume": 1.0,
+              "Master Volume": 1.0
+            },
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
+}

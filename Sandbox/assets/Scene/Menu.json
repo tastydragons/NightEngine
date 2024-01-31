@@ -1,0 +1,397 @@
+{
+    "Number of Entities": {
+        "Entities": 6
+    },
+    "EntitySignatures": [
+        "00000000000000000000000011111101",
+        "00000000000000000000000000011001",
+        "00000000000000000000000011111101",
+        "00000000000000000000000011111101",
+        "00000000000000000000000011111101",
+        "00000000000000000000000011111101"
+    ],
+    "Components": {
+        "0": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 4.170206546783447,
+                "scaleY": 1.9999960660934448,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": 0.0,
+                "minX2": 0.0,
+                "minY1": 0.0,
+                "minY2": 0.0,
+                "maxX1": 0.0,
+                "maxX2": 0.0,
+                "maxY1": 0.0,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Main Menu BackGround"
+            },
+            {
+                "TextureName": "Main_Background",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "AudioManager",
+                "1": "BackgroundAudio",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Untagged",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "ShortCircuit_Menu_Music_Loop.wav",
+                    "Channel": 2,
+                    "IsLooping": true
+                },
+                "AudioArrCount": 1,
+                "BGM Volume": 0.75,
+                "SFX Volume": 0.75,
+                "Master Volume": 0.75
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "1": [
+            {
+                "posX": 0.0,
+                "posY": 0.43617022037506104,
+                "scaleX": 2.4000000953674316,
+                "scaleY": 0.9862148761749268,
+                "Rot": 0.0
+            },
+            {},
+            {},
+            {
+                "NameTag": "Title"
+            },
+            {
+                "TextureName": "ExomataLogo",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "2": [
+            {
+                "posX": 0.0,
+                "posY": 0.0,
+                "scaleX": 1.0,
+                "scaleY": 0.20000000298023224,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -1.0,
+                "minX2": 0.0,
+                "minY1": -0.6600000262260437,
+                "minY2": 0.0,
+                "maxX1": 1.0,
+                "maxX2": 0.0,
+                "maxY1": 0.6600000262260437,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Start"
+            },
+            {
+                "TextureName": "Start_Idle",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Start",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 0.75,
+                "SFX Volume": 0.75,
+                "Master Volume": 0.75
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "3": [
+            {
+                "posX": 0.0,
+                "posY": -0.75,
+                "scaleX": 1.0,
+                "scaleY": 0.20000000298023224,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -1.0,
+                "minX2": 0.0,
+                "minY1": -0.6600000262260437,
+                "minY2": 0.0,
+                "maxX1": 1.0,
+                "maxX2": 0.0,
+                "maxY1": 0.6600000262260437,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Quit"
+            },
+            {
+                "TextureName": "Quit_Idle",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Quit",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 0.75,
+                "SFX Volume": 0.75,
+                "Master Volume": 0.75
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "4": [
+            {
+                "posX": 0.0,
+                "posY": -0.5,
+                "scaleX": 1.0,
+                "scaleY": 0.20000000298023224,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -1.0,
+                "minX2": 0.0,
+                "minY1": -0.6600000262260437,
+                "minY2": 0.0,
+                "maxX1": 1.0,
+                "maxX2": 0.0,
+                "maxY1": 0.6600000262260437,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "Options"
+            },
+            {
+                "TextureName": "Options_Idle",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "Options",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 0.75,
+                "SFX Volume": 0.75,
+                "Master Volume": 0.75
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        "5": [
+            {
+                "posX": 0.0,
+                "posY": -0.25,
+                "scaleX": 1.0,
+                "scaleY": 0.20000000298023224,
+                "Rot": 0.0
+            },
+            {},
+            {
+                "ColliderType1": 4,
+                "ColliderType2": 0,
+                "minX1": -1.0,
+                "minX2": 0.0,
+                "minY1": -0.6600000262260437,
+                "minY2": 0.0,
+                "maxX1": 1.0,
+                "maxX2": 0.0,
+                "maxY1": 0.6600000262260437,
+                "maxY2": 0.0,
+                "offsetX1": 0.0,
+                "offsetX2": 0.0,
+                "offsetY1": 0.0,
+                "offsetY2": 0.0,
+                "radius1": 0.0,
+                "radius2": 0.0
+            },
+            {
+                "NameTag": "HowToPlay"
+            },
+            {
+                "TextureName": "htp_button_Idle",
+                "Index_X": 0,
+                "Index_Y": 0,
+                "Ucoordinates": 512.0,
+                "Vcoordinates": 512.0,
+                "IsSpriteSheet": false,
+                "IsAnimated": false,
+                "MaxIndex": 0,
+                "LayeringOrder": 0
+            },
+            {
+                "0": "ButtonResponse",
+                "1": "AudioManager",
+                "ScriptCount": 2
+            },
+            {
+                "Tag": "HowToPlay",
+                "TargetTag": ""
+            },
+            {
+                "0": {
+                    "AudioPath": "UI_Hover.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "1": {
+                    "AudioPath": "UI_Click.wav",
+                    "Channel": 3,
+                    "IsLooping": false
+                },
+                "AudioArrCount": 2,
+                "BGM Volume": 0.75,
+                "SFX Volume": 0.75,
+                "Master Volume": 0.75
+            },
+            {},
+            {},
+            {},
+            {}
+        ]
+    }
+}
